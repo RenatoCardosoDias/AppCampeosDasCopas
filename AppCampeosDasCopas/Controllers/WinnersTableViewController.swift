@@ -8,6 +8,9 @@
 import UIKit
 
 class WinnersTableViewController: UITableViewController {
+    
+    //instanciando WorldCup para popular com o dados do arquivo JSON
+    var worldCups: [WorldCup] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()

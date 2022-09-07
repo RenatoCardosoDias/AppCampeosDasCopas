@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct WordCup: Codable{
+struct WorldCup: Codable{
     let year: Int
     let contry: String
     let winner: String
