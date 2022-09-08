@@ -18,7 +18,18 @@
                         <view key="tableHeaderView" contentMode="scaleToFill" id="Qku-2z-etf">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="header" translatesAutoresizingMaskIntoConstraints="NO" id="ibq-n7-mpN">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="138"/>
+                                </imageView>
+                            </subviews>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstItem="ibq-n7-mpN" firstAttribute="leading" secondItem="Qku-2z-etf" secondAttribute="leading" id="8Yy-TE-xQh"/>
+                                <constraint firstAttribute="bottom" secondItem="ibq-n7-mpN" secondAttribute="bottom" id="cRm-uV-41l"/>
+                                <constraint firstAttribute="trailing" secondItem="ibq-n7-mpN" secondAttribute="trailing" id="lNT-Hg-vLe"/>
+                                <constraint firstItem="ibq-n7-mpN" firstAttribute="top" secondItem="Qku-2z-etf" secondAttribute="top" id="oy8-d5-tzp"/>
+                            </constraints>
                         </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="QdD-uP-apU">
@@ -59,6 +70,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="header" width="1200" height="514"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
