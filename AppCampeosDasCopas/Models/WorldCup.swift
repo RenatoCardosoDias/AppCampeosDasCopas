@@ -9,7 +9,7 @@ import Foundation
 
 struct WorldCup: Codable{
     let year: Int
-    let contry: String
+    let country: String
     let winner: String
     let vice: String
     let winnerScore: String
