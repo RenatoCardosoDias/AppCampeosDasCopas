@@ -34,12 +34,14 @@ class WinnersTableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        //define o numero de agrupamentos, quando há somente 1 agrupamento nao se faz necessário esse metodo ou comenta-se/exclui esse método
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        //retorna a quantidade de linhas que deseja mostrar, neste caso, a quantidade de linhas que tem no JSON.
+        return worldCups.count
     }
 
     /*
