@@ -9,17 +9,25 @@ import UIKit
 
 class WinnersTableViewController: UITableViewController {
     
-    //instanciando WorldCup para popular com o dados do arquivo JSON
+    //instanciando WorldCup para popular com o dados do arquivo JSON(carregar todas as info's que contem no arquivo JSON)
     var worldCups: [WorldCup] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        //Carregar os dados da Copa do mundo
+        loadWorldCups()
+        
+    } //end override func viewDidLoad
+    
+    func loadWorldCups(){
+        //carregar todas as copas do mundo, vai tirar do JSON e carregar no ARRAY worldCups
+        let fileURL = Bundle.main.url(forResource: "winners.json", withExtension: nil)!
+        let jsonData = try! Data(contentsOf: fileURL)
+        do { //Tentando decodificar a struct do arquivo WorldCup.swift e jogar dentro da variável worldCups
+            worldCups = try JSONDecoder().decode([WorldCup].self, from: jsonData)
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 
     // MARK: - Table view data source
