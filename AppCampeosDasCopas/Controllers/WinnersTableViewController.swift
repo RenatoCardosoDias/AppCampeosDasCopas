@@ -44,15 +44,18 @@ class WinnersTableViewController: UITableViewController {
         return worldCups.count
     }
 
-    /*
+    //metodo que é chamado sempre que for apresentar apresentar uma celula, quando ela estiver preste a ser visualizada
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        //tenta utilizar uma celular com o identificador informado
+        //dequeueReusableCell - ele vai Re Utilizando a informação da celula para que não seja preciso carregar mil informações na memória do celular e dar crash depois.
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.

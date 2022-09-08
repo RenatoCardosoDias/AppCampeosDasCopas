@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		882C52F128C8A3C200F72D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52F028C8A3C200F72D7F /* AppDelegate.swift */; };
 		882C52F328C8A3C200F72D7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C52F228C8A3C200F72D7F /* SceneDelegate.swift */; };
-		882C52F828C8A3C200F72D7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882C52F628C8A3C200F72D7F /* Main.storyboard */; };
 		882C52FA28C8A3C300F72D7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 882C52F928C8A3C300F72D7F /* Assets.xcassets */; };
 		882C533628C8A51100F72D7F /* Itália.png in Resources */ = {isa = PBXBuildFile; fileRef = 882C530528C8A51100F72D7F /* Itália.png */; };
 		882C533728C8A51100F72D7F /* País de Gales.png in Resources */ = {isa = PBXBuildFile; fileRef = 882C530628C8A51100F72D7F /* País de Gales.png */; };
@@ -65,13 +64,13 @@
 		882C536E28C8A80300F72D7F /* WorldCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C536D28C8A80300F72D7F /* WorldCupViewController.swift */; };
 		882C537028C8A86600F72D7F /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C536F28C8A86600F72D7F /* WorldCup.swift */; };
 		882C537728C8AAC200F72D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882C537628C8AAC200F72D7F /* LaunchScreen.storyboard */; };
+		883C95E028C9E339008B784E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883C95DF28C9E339008B784E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		882C52ED28C8A3C200F72D7F /* AppCampeosDasCopas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppCampeosDasCopas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		882C52F028C8A3C200F72D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		882C52F228C8A3C200F72D7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		882C52F728C8A3C200F72D7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		882C52F928C8A3C300F72D7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		882C52FE28C8A3C300F72D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		882C530528C8A51100F72D7F /* Itália.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Itália.png"; path = "../../../../../../Downloads/Arquivos CampeoesDaCopa/Bandeiras/Itália.png"; sourceTree = "<group>"; };
@@ -128,6 +127,7 @@
 		882C536D28C8A80300F72D7F /* WorldCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupViewController.swift; sourceTree = "<group>"; };
 		882C536F28C8A86600F72D7F /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
 		882C537628C8AAC200F72D7F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppCampeosDasCopas/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		883C95DF28C9E339008B784E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = AppCampeosDasCopas/Main.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -232,8 +232,8 @@
 		882C536928C8A6D700F72D7F /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				882C52F628C8A3C200F72D7F /* Main.storyboard */,
 				882C537628C8AAC200F72D7F /* LaunchScreen.storyboard */,
+				883C95DF28C9E339008B784E /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -331,6 +331,7 @@
 				882C534328C8A51100F72D7F /* Arábia Saudita.png in Resources */,
 				882C534E28C8A51100F72D7F /* Bolívia.png in Resources */,
 				882C534028C8A51100F72D7F /* Áustria.png in Resources */,
+				883C95E028C9E339008B784E /* Main.storyboard in Resources */,
 				882C533F28C8A51100F72D7F /* Hungria.png in Resources */,
 				882C535528C8A51100F72D7F /* Noruega.png in Resources */,
 				882C535C28C8A51100F72D7F /* Holanda.png in Resources */,
@@ -362,7 +363,6 @@
 				882C536228C8A51100F72D7F /* Brasil.png in Resources */,
 				882C536028C8A51100F72D7F /* Iugoslávia.png in Resources */,
 				882C536428C8A51100F72D7F /* Alemanha Oriental.png in Resources */,
-				882C52F828C8A3C200F72D7F /* Main.storyboard in Resources */,
 				882C534728C8A51100F72D7F /* Alemanha.png in Resources */,
 				882C533D28C8A51100F72D7F /* Rússia.png in Resources */,
 				882C533628C8A51100F72D7F /* Itália.png in Resources */,
@@ -385,17 +385,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		882C52F628C8A3C200F72D7F /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				882C52F728C8A3C200F72D7F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		882C52FF28C8A3C300F72D7F /* Debug */ = {
