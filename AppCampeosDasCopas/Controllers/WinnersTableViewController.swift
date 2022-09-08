@@ -25,8 +25,9 @@ class WinnersTableViewController: UITableViewController {
         let jsonData = try! Data(contentsOf: fileURL)
         do { //Tentando decodificar a struct do arquivo WorldCup.swift e jogar dentro da variável worldCups
             worldCups = try JSONDecoder().decode([WorldCup].self, from: jsonData)
+            
         } catch {
-            print(error.localizedDescription)
+            print(error)
         }
     }
 
@@ -51,8 +52,11 @@ class WinnersTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
         // Configure the cell...
-        
-
+        //Preenchar cada celula com UITableViewCell
+        let worldCup = worldCups[indexPath.row]
+        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
+        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
+        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
         return cell
     }
     
