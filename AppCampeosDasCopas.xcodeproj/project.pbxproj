@@ -65,6 +65,7 @@
 		882C537028C8A86600F72D7F /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882C536F28C8A86600F72D7F /* WorldCup.swift */; };
 		882C537728C8AAC200F72D7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 882C537628C8AAC200F72D7F /* LaunchScreen.storyboard */; };
 		883C95E028C9E339008B784E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 883C95DF28C9E339008B784E /* Main.storyboard */; };
+		883C95E228CA1681008B784E /* WorldCupTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883C95E128CA1681008B784E /* WorldCupTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -128,6 +129,7 @@
 		882C536F28C8A86600F72D7F /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
 		882C537628C8AAC200F72D7F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = AppCampeosDasCopas/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		883C95DF28C9E339008B784E /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Main.storyboard; path = AppCampeosDasCopas/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		883C95E128CA1681008B784E /* WorldCupTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +245,7 @@
 			children = (
 				882C536D28C8A80300F72D7F /* WorldCupViewController.swift */,
 				882C536A28C8A7B500F72D7F /* WinnersTableViewController.swift */,
+				883C95E128CA1681008B784E /* WorldCupTableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -379,6 +382,7 @@
 				882C536B28C8A7B500F72D7F /* WinnersTableViewController.swift in Sources */,
 				882C52F128C8A3C200F72D7F /* AppDelegate.swift in Sources */,
 				882C537028C8A86600F72D7F /* WorldCup.swift in Sources */,
+				883C95E228CA1681008B784E /* WorldCupTableViewCell.swift in Sources */,
 				882C536E28C8A80300F72D7F /* WorldCupViewController.swift in Sources */,
 				882C52F328C8A3C200F72D7F /* SceneDelegate.swift in Sources */,
 			);
