@@ -131,6 +131,16 @@
                                         <constraint firstAttribute="trailing" secondItem="KFA-Ba-KS2" secondAttribute="trailing" id="wxw-Fh-kkj"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivVice" destination="Gth-WL-mxO" id="hcW-Wj-24Q"/>
+                                    <outlet property="ivWinner" destination="QhE-3T-Hwk" id="tnb-qK-UVb"/>
+                                    <outlet property="lbCountry" destination="ZJm-cd-8Io" id="Keu-ww-jBm"/>
+                                    <outlet property="lbVice" destination="o1f-OV-yjp" id="N9x-Iv-LIa"/>
+                                    <outlet property="lbViceScore" destination="ePi-Dt-Hva" id="p1O-ce-Ct2"/>
+                                    <outlet property="lbWinner" destination="UZy-fO-3I4" id="iFY-df-6Aq"/>
+                                    <outlet property="lbWinnerScore" destination="KFA-Ba-KS2" id="p28-DF-957"/>
+                                    <outlet property="lbYear" destination="qHF-mZ-IZI" id="DQ5-tn-JNn"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -49,14 +49,16 @@ class WinnersTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //tenta utilizar uma celular com o identificador informado
         //dequeueReusableCell - ele vai Re Utilizando a informação da celula para que não seja preciso carregar mil informações na memória do celular e dar crash depois.
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        //2º passo - tratar a constate cell como uma WorldCupViewCellController, dessa maneira vamos ter acesso a todas as propriedades
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupViewController
 
         // Configure the cell...
         //Preenchar cada celula com UITableViewCell
         let worldCup = worldCups[indexPath.row]
-        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
-        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
-        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
+//        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
+//        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
+//        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
+        
         return cell
     }
     

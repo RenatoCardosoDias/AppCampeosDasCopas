@@ -8,6 +8,17 @@
 import UIKit
 
 class WorldCupTableViewCell: UITableViewCell {
+    
+    
+    @IBOutlet weak var lbYear: UILabel!
+    @IBOutlet weak var ivWinner: UIImageView!
+    @IBOutlet weak var ivVice: UIImageView!
+    @IBOutlet weak var lbWinner: UILabel!
+    @IBOutlet weak var lbVice: UILabel!
+    @IBOutlet weak var lbWinnerScore: UILabel!
+    @IBOutlet weak var lbViceScore: UILabel!
+    @IBOutlet weak var lbCountry: UILabel!
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
