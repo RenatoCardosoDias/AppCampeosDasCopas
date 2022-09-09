@@ -50,8 +50,23 @@ extension WorldCupViewController: UITableViewDataSource {
     //definindo o numero de secções da tabela
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        //DICA: QUANDO TEMMOS SOMENTE UMA SEÇÃO NÃO PRECISAMOS DEFINIR O METODO, NESSE CASO VAMOS DEIXAR IMPLEMENTADO POR QUESTÕES DE APRENDIZADO
-        return 1
+        //DICA: QUANDO TEMMOS SOMENTE UMA SEÇÃO NÃO PRECISAMOS DEFINIR O METODO, no caso desse aplicativos vamos definir de acordo com a fase que cada time passa
+        return worldCup.matches.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //DEFINIR A QUANTIDADE DE LINHAS DE CADA SEÇÃO
+        //mostar a lista de todos
+        //criar um array que armazena a quantidade de jogos de cada fase, pois alguns tem 2 fases outras 4 e assim por diante, vamos definir o numero de linhas através do numero armazendo no array
+        
+        let games = worldCup.matches[section].games
+        return games.count
+    }
+    //metodo para perpara a celeula
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        
+        
+        return cell
     }
     
 } //end extension WorldCupViewController
