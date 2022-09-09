@@ -47,6 +47,12 @@ class WorldCupViewController: UIViewController {
 
 
 extension WorldCupViewController: UITableViewDataSource {
+    //definindo o numero de secções da tabela
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        //DICA: QUANDO TEMMOS SOMENTE UMA SEÇÃO NÃO PRECISAMOS DEFINIR O METODO, NESSE CASO VAMOS DEIXAR IMPLEMENTADO POR QUESTÕES DE APRENDIZADO
+        return 1
+    }
     
 } //end extension WorldCupViewController
 
