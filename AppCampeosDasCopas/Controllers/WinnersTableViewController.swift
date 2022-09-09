@@ -11,6 +11,14 @@ class WinnersTableViewController: UITableViewController {
     
     //instanciando WorldCup para popular com o dados do arquivo JSON(carregar todas as info's que contem no arquivo JSON)
     var worldCups: [WorldCup] = []
+    
+    //passando informações de uma view para outra
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! WorldCupViewController //tela que vai apresentar os dados
+        //pegar o Index do dados da linha selecionada
+        let worldCup = worldCups[tableView.indexPathForSelectedRow!.row]
+        vc.worldCup = worldCup
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +58,7 @@ class WinnersTableViewController: UITableViewController {
         //tenta utilizar uma celular com o identificador informado
         //dequeueReusableCell - ele vai Re Utilizando a informação da celula para que não seja preciso carregar mil informações na memória do celular e dar crash depois.
         //2º passo - tratar a constate cell como uma WorldCupViewCellController, dessa maneira vamos ter acesso a todas as propriedades
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupViewController
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! WorldCupTableViewCell
 
         // Configure the cell...
         //Preenchar cada celula com UITableViewCell
@@ -58,7 +66,7 @@ class WinnersTableViewController: UITableViewController {
 //        cell.textLabel?.text = "Copa \(worldCup.year) - \(worldCup.country)"
 //        cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
 //        cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
-        
+        cell.prepare(with: worldCup)
         return cell
     }
     
