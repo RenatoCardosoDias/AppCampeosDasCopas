@@ -8,22 +8,37 @@
 import UIKit
 
 class WorldCupViewController: UIViewController {
+    
+    @IBOutlet weak var ivWinner: UIImageView!
+    @IBOutlet weak var ivVice: UIImageView!
+    @IBOutlet weak var lbScore: UILabel!
+    @IBOutlet weak var lbWinner: UILabel!
+    @IBOutlet weak var lbVice: UILabel!
+    @IBOutlet weak var tableview: UITableView!
+    
+    //usando o Delegate, e para que a classe possa responde a alguns metodos que são disparados quando manipula a tabela quando o usuário por exemmplo quer excluir algum item, quando ele seleciona uma celula, coisas que envolve a manipulação pelo o usuário dessa tabela são disparados usando o delegate
+    
+    
+    
+    //Recebendo dados da view WinnersTableViewController
+    var worldCup : WorldCup!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-    }
+        //testando se foi pego o index
+        //print("ano da compa selecionada: \(worldCup.year)")
+        //alterando o navigationItem da view
+        title = "WorldCup \(worldCup.year)"
+        
+        
+        ivWinner.image = UIImage(named: "\(worldCup.winner).png")
+        ivVice.image = UIImage(named: "\(worldCup.vice).png")
+        lbWinner.text = worldCup.winner
+        lbVice.text = worldCup.vice
+        lbScore.text = "\(worldCup.winnerScore) X \(worldCup.viceScore)"
+        
+    } //end override func viewDidLoad
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
+}//end class WorldCupviewController
