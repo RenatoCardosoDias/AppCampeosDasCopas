@@ -44,3 +44,12 @@ class WorldCupViewController: UIViewController {
     
 
 }//end class WorldCupviewController
+
+
+extension WorldCupViewController: UITableViewDataSource {
+    
+} //end extension WorldCupViewController
+
+extension WorldCupViewController: UITableViewDelegate {
+    
+}
