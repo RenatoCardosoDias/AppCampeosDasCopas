@@ -19,6 +19,8 @@ class WorldCupViewController: UIViewController {
     //usando o Delegate, e para que a classe possa responde a alguns metodos que são disparados quando manipula a tabela quando o usuário por exemmplo quer excluir algum item, quando ele seleciona uma celula, coisas que envolve a manipulação pelo o usuário dessa tabela são disparados usando o delegate
     
     
+    //DataSource - é o protocolo que define os metodos que vão servir para alimentar a minha tabela
+    
     
     //Recebendo dados da view WinnersTableViewController
     var worldCup : WorldCup!
