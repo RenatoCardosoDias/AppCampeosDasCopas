@@ -30,5 +30,19 @@ class WorldCupTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
-}
+    //metodo para prepara a celula - a idéia é passar a copa que a tableView está preenchendo naquela celula
+    func prepare(with cup: WorldCup){
+        //preenchendo as label com as informaçõoes do json
+        lbYear.text = "\(cup.year)"
+        ivWinner.image = UIImage(named: cup.winner)
+        ivVice.image = UIImage(named: cup.vice)
+        lbWinner.text = cup.winner
+        lbVice.text = cup.vice
+        lbCountry.text = cup.country
+        lbWinnerScore.text = cup.winnerScore
+        lbViceScore.text = cup.viceScore
+        
+        
+        
+    } //end func prepare
+} //end class WorldCupTableViewCell
